@@ -1,40 +1,75 @@
-body{
+/* General Styling */
+body {
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
-#a3{
+
+/* Counter Container */
+#a1 {
+    background-color: aliceblue;
+    width: 40vw;
+    max-width: 400px;
+    min-width: 250px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+/* Counter Number */
+#am {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Counter Heading */
+#a3 {
     color: aliceblue;
     text-align: center;
     font-weight: 700;
     font-style: italic;
     background-color: rgb(3, 3, 3);
-    width: 30vw;
-   border-radius: 30%;
+    width: 50%;
+    max-width: 200px;
+    border-radius: 30%;
+    margin: 0 auto 20px;
+    padding: 10px;
 }
-#a1{
-    
-    margin-top: 13%;
-    background-color: aliceblue;
-width: 30vw;
-padding: 40px;
-text-align: center;
-margin-left: 30%;
-border-radius: 40px;
 
-}
-#am{
-    font-size: 350%;
-}
-button{
+/* Buttons */
+button {
     border-radius: 20px;
     background-color: black;
     color: aliceblue;
-    padding: 10px;
+    padding: 10px 20px;
     cursor: pointer;
-border: 1px solid black;
-font-weight: 500;
+    border: 1px solid black;
+    font-weight: 500;
     transition: transform 0.3s ease;
     letter-spacing: 1px;
+    margin: 5px;
 }
+
 button:hover {
-    transform: scale(1.2); 
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #a1 {
+        width: 80%;
+        padding: 30px;
     }
+
+    #am {
+        font-size: 2.5rem;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
